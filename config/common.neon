@@ -1,0 +1,24 @@
+parameters:
+
+
+extensions:
+    api: Apitte\Core\DI\ApiExtension
+
+
+api:
+    debug: %debugMode%
+    catchException: true # Sets if exception should be catched and transformed into response or rethrown to output (debug only)
+
+
+session:
+	expiration: 14 days
+
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+
+services:
+	- App\Controllers\UserController
